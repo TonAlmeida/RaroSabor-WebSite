@@ -43,9 +43,6 @@ p{
 }
 
 /*----------------------------------SPECIALS*/
-.divider-custum-line{
-    background: black;
-}
 .separator a {
     border-right: 1px solid white;
     padding: 0 15px;
@@ -70,6 +67,11 @@ header{
     position: fixed;
 }
 /*----------------------------------MAINNAV*/
+#mainNav{
+    background: linear-gradient(var(--red) 10%, 15%, var(--yellow) 90%)!important;
+    margin-bottom: 5px;
+    border-bottom: 5px solid var(--red);
+}
 .nav-link{
     opacity: 1;
     color: var(--black)!important;
@@ -78,18 +80,35 @@ header{
     opacity: .8;
     transform: scale(1.015);
 }
+#container-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+}
 #link-home-logo{
     margin-bottom: 0;
     padding-bottom: 0;
 }
 #home-logo{
-    margin-top: 20px;
     width: 200px;
     transition: 500ms;
 }
-#mainNav{
-    background: linear-gradient(var(--red) 10%, 15%, var(--yellow) 90%)!important;
-    margin-bottom: 5px;
+.fund-urs-products{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 40px;
+    width: 25vw;
+
+    border-radius: 20px 0 0 20px;
+    z-index: 2;
+    text-align: right;
+}
+.fund-urs-products p{
+    font-size: 13px;
+    font-weight: 500;
 }
 /*----------------------------------SLIDER*/
 #Slider-images{
@@ -121,9 +140,12 @@ header{
     margin: 10px;
     filter: grayscale(100%);
     cursor: pointer;
+
+    max-width: 300px;
+    max-height: 300px;
 }
 .img-product:hover{
-    filter: grayscale(0);
+    filter: grayscale(10%);
     transition: 500ms;
 }
 
@@ -175,6 +197,9 @@ header{
 }
 
 /*------------------------------FOOTER*/
+footer{
+    background: rgb(177, 2, 2) !important;
+}
 .btn-social{
     padding: 5px;
     border-radius: 50%;
@@ -182,6 +207,9 @@ header{
 }
 footer p{
     color: white;
+}
+.copyright{
+    background: rgb(105, 2, 2);
 }
 
 /*------------------------------MOBILE*/
