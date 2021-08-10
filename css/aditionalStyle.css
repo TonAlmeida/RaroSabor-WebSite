@@ -5,23 +5,11 @@
     --green: green;
     --dark-blue: #3f74aa;
     --black: black;
+    --white: white;
 }
 body{
     background: var(--yellow);
     font-weight: bold;
-}
-header{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0;
-
-    width: 100vw;
-
-    color: white;
-    background:var(--red);
-    z-index: 1031;
 }
 a{
     cursor: pointer;
@@ -43,6 +31,15 @@ p{
 }
 
 /*----------------------------------SPECIALS*/
+#linear-gradient{
+    position: fixed;
+    width: 100vw;
+    height: 15px;
+    top: 20px;
+
+    background: linear-gradient(var(--red) 1%, var(--yellow) 99%);
+    z-index: 2000;
+}
 .separator a {
     border-right: 1px solid white;
     padding: 0 15px;
@@ -51,6 +48,9 @@ p{
 .separator a:last-child {
     border-right: 0px;
     padding: 0 15px;
+}
+.black{
+    border: black 2px solid;
 }
 .red{
     border:var(--red) 5px solid;
@@ -64,13 +64,30 @@ p{
 
 /*----------------------------------HEADER*/
 header{
-    position: fixed;
+    position: fixed!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 20px;
+
+    color: white;
+    background:var(--red);
+    z-index: 1031;
 }
+header a{
+    font-weight: initial;
+}
+
 /*----------------------------------MAINNAV*/
 #mainNav{
-    background: linear-gradient(var(--red) 10%, 15%, var(--yellow) 90%)!important;
+    background: var(--yellow) !important;
     margin-bottom: 5px;
     border-bottom: 5px solid var(--red);
+    padding-top: 35px;
 }
 .nav-link{
     opacity: 1;
@@ -110,6 +127,7 @@ header{
     font-size: 13px;
     font-weight: 500;
 }
+
 /*----------------------------------SLIDER*/
 #Slider-images{
     border-top: var(--red) 5px solid;
@@ -210,6 +228,63 @@ footer p{
 }
 .copyright{
     background: rgb(105, 2, 2);
+}
+
+/*------------------------------PRODUCTS PAGE*/
+main{
+    width: 100vw;
+    padding: 2rem;
+    text-align: left;
+}
+main h1{
+    margin: 3rem;
+}
+#products-list{
+    padding: 1.5rem .5rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: black;
+
+    cursor: pointer;
+    transition: 500ms;
+}
+.item:nth-child(even) {
+    background: var(--red);
+}
+.item-description,
+.item-images{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-images{
+    opacity: 0;
+    pointer-events: none;
+    transition: 600ms;
+}
+.item-images img{
+    width: 100px;
+    height: 100px;
+    margin: 0 25px;
+}
+.selected{
+    background: var(--white) !important;
+    height: 200px;
+}
+.selected .item-images{
+    opacity: 1;
 }
 
 /*------------------------------MOBILE*/
