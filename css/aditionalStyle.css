@@ -31,6 +31,20 @@ p{
 }
 
 /*----------------------------------SPECIALS*/
+#btn-products{
+    background: rgb(41, 41, 41);
+    color: white !important;
+
+    border-radius: 20px !important;
+    border: 2px black solid;
+    padding: 8px !important;
+    margin: 5px;
+}
+#btn-products:hover{
+    background: rgba(0,0,0,0);
+    color: black !important;
+
+}
 #linear-gradient{
     position: fixed;
     width: 100vw;
@@ -95,14 +109,11 @@ header a{
 }
 .nav-link:hover{
     opacity: .8;
-    transform: scale(1.015);
 }
 #container-menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    padding: 20px;
 }
 #link-home-logo{
     margin-bottom: 0;
@@ -112,27 +123,12 @@ header a{
     width: 200px;
     transition: 500ms;
 }
-.fund-urs-products{
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    height: 40px;
-    width: 25vw;
-
-    border-radius: 20px 0 0 20px;
-    z-index: 2;
-    text-align: right;
-}
-.fund-urs-products p{
-    font-size: 13px;
-    font-weight: 500;
-}
 
 /*----------------------------------SLIDER*/
 #Slider-images{
     border-top: var(--red) 5px solid;
     border-bottom: var(--red) 5px solid;
-    margin-top: 180px;
+    margin-top: 140px;
     padding: 0;
 }
 .carousel-inner{
@@ -253,14 +249,13 @@ main h1{
     margin: 5px;
 
     font-size: 1.5rem;
-    border-radius: 5px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
     color: black;
 
     cursor: pointer;
     transition: 500ms;
-}
-.item:nth-child(even) {
-    background: var(--red);
 }
 .item-description,
 .item-images{
@@ -273,11 +268,28 @@ main h1{
     opacity: 0;
     pointer-events: none;
     transition: 600ms;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .item-images img{
     width: 100px;
     height: 100px;
-    margin: 0 25px;
+    margin: 10px;
+}
+.description-whereIFound{
+    font-weight: 400;
+    font-size: 20px;
+}
+.description-of-the-product{
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+
+    padding: 20px;
+
+    border: 1px solid black;
 }
 .selected{
     background: var(--white) !important;

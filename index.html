@@ -22,7 +22,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <!--AditionalStyle-->
     <link rel="stylesheet" href="./css/aditionalStyle.css">
-    <script defer src="./js/logoJs.js"></script>
+    <script defer src="./js/reSizing.js"></script>
 </head>
 
 <body id="page-top">
@@ -60,7 +60,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div id="container-menu" class="container">
             <!--Logo-->
-            <a id="link-home-logo" class="navbar-brand nav-link" href="#page-top">
+            <a id="link-home-logo" class="navbar-brand" href="#page-top">
                 <img id="home-logo" src="./img/thumbnail_Logo.png" alt="kigole logo">
             </a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
@@ -99,15 +99,20 @@
                                 Contato
                         </a>
                     </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a
+                            id="btn-products"
+                            class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="products.html">
+                                Onde Encontrar?
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <a href="products.html" class="fund-urs-products">
-            <p>
-                Onde encontar nossos produtos
-            </p>
-        </a>
+        
     </nav>
+
     <!--Slider Images-->
     <section id="Slider-images" class="masthead text-white text-center">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -191,19 +196,28 @@
 
         <div id="container-products" class="container">
             <div>
-                <img class="img-product"
+                <a href="products.html">
+                    <img class="img-product"
                     src="./img/products images/Café.png"
-                    alt="product">
+                    alt="product"
+                    />
+                </a>
             </div>
             <div>
-                <img class="img-product"
-                    src="./img/products images/Condimentos-e-especiarias.png"
-                    alt="product">
+                <a href="products.html">
+                    <img class="img-product"
+                    src="./img/products images/Café.png"
+                    alt="product"
+                    />
+                </a>
             </div>
             <div>
-                <img class="img-product"
-                    src="./img/products images/Site-condimentos_pasta-de-alho.png"
-                    alt="product">
+                <a href="products.html">
+                    <img class="img-product"
+                    src="./img/products images/Café.png"
+                    alt="product"
+                    />
+                </a>
             </div>
         </div>
     </section>
@@ -307,7 +321,7 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary" id="submitButton" type="submit">Enviar</button>
+                        <button class="btn btn-dark" id="submitButton" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
